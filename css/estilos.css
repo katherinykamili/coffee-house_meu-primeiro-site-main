@@ -1,0 +1,202 @@
+/*css/estilos.css*/
+/*
+Aula 02 - CSS Fundamentos
+
+Cor Primária: #975606
+Cor Secundária: #c5a055
+Cor de Destaque: #629657
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Poiret+One&display=swap");
+
+/*1.Box- sizing global - sempre comece com isso*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*2.Estilo base do documento*/
+Body {
+    font-family: "Poiret One", sans-serif;
+    font-style:normal;
+    font-size: 20PX;
+    line-height: 1.6;
+    color: #3b2c1e;
+    background-color: #FBfafc;
+    border-left: #fb8a01;
+}
+
+/*3. Cabeçalho*/
+header {
+
+    background: url(../img/coffeegraos.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Imperial Script", cursive;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*4.Navegação*/
+nav {
+    background: #975606;
+    text-align: center;
+    display: flex;
+    gap: 4px;
+    padding: 8px 16px;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background .2s ease;
+}
+
+nav a:hover {
+    background: rgba(204, 165, 110, 0.207);
+    text-decoration: none;
+    color: #2c1e02
+}
+
+/*5.Conteúdos Principais*/
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    /* centraliza */
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #975606;
+    border-left: 4px solid #975606;
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #c5a055;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.mapa-box {
+    width: 100%;
+    max-width: 800px;
+    /* Limita o tamanho em telas grandes */
+    margin: 0 auto;
+    border: 5px solid #886037;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background .2s ease;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+    /* Remove espaços vazios abaixo do iframe */
+}
+
+.menu {
+    color: #975606;
+    border-radius: 6px;
+    transition: background .2s;
+}
+
+.menu:hover {
+    color: #975606;
+    text-decoration: none;
+}
+
+.saiba-mais {
+    color: #975606;
+}
+
+.saiba-mais:hover {
+    color: #975606;
+    transition: background .2s ease;
+    text-decoration: none;
+}
+
+/*6.Listas Personalizadas*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0 8px 20px;
+    font-style: normal;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+    font-size: 1.2rem;
+    color: #475569;
+}
+
+ul li::before {
+    content: "›";
+    color: #629657;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+/* 7. Links */
+a {
+    color: #629657;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+a:hover {
+    color: #629657;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+/* 8. Rodapé */
+footer {
+    background: #c5a055;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    padding: 24px 20px;
+    font-size: .9rem;
+    margin-top: 40px;
+}
