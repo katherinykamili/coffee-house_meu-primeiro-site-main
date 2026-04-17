@@ -97,6 +97,30 @@ section {
     margin-bottom: 32px;
 }
 
+.expresso {
+    border-radius: 12px;
+    transition: transform .2s ease;
+}
+.expresso:hover {
+    transform: scale(1.05);
+}
+
+.americano {
+    border-radius: 12px;
+    transition: transform .2s ease;
+}
+.americano:hover {
+    transform: scale(1.05);
+}
+
+.coado {
+    border-radius: 12px;
+    transition: transform .2s ease;
+}
+.coado:hover {
+    transform: scale(1.05);
+}
+
 h2 {
     font-size: 1.6rem;
     font-weight: 700;
