@@ -117,6 +117,7 @@ section {
     border-radius: 12px;
     transition: transform .2s ease;
 }
+
 .coado:hover {
     transform: scale(1.05);
 }
